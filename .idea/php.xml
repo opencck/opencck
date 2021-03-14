@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/cms/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/cms/vendor/vimeo/psalm" />
+      <path value="$PROJECT_DIR$/cms/vendor/webmozart/path-util" />
+      <path value="$PROJECT_DIR$/cms/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/cms/vendor/amphp/amp" />
+      <path value="$PROJECT_DIR$/cms/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/cms/vendor/amphp/byte-stream" />
+      <path value="$PROJECT_DIR$/cms/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/cms/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/cms/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/cms/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/cms/vendor/netresearch/jsonmapper" />
+      <path value="$PROJECT_DIR$/cms/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/cms/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/cms/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/cms/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/cms/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/cms/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/cms/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/cms/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/cms/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/cms/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/cms/vendor/felixfbecker/advanced-json-rpc" />
+      <path value="$PROJECT_DIR$/cms/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/cms/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/cms/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/cms/vendor/felixfbecker/language-server-protocol" />
+      <path value="$PROJECT_DIR$/cms/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/cms/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/cms/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/cms/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/cms/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/cms/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/cms/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/cms/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/cms/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/cms/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/cms/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/cms/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/cms/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/cms/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/cms/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/cms/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/cms/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/cms/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/cms/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/cms/vendor/openlss/lib-array2xml" />
+      <path value="$PROJECT_DIR$/cms/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/cms/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/cms/vendor/opencck/api" />
+      <path value="$PROJECT_DIR$/cms/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/cms/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/cms/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/cms/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/cms/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/cms/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/cms/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/cms/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/cms/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/cms/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/cms/vendor/composer" />
+      <path value="$PROJECT_DIR$/cms/vendor/phpunit/phpunit" />
+    </include_path>
+  </component>
+  <component name="PhpInterpreters">
+    <interpreters>
+      <interpreter id="c2a1f3d5-c46c-44c5-af52-89b90d136bab" name="cms" home="docker-compose://DATA" debugger_id="php.debugger.XDebug">
+        <configuration_options>
+          <configuration_option name="xdebug.client_host" value="192.168.99.1" />
+        </configuration_options>
+        <remote_data INTERPRETER_PATH="php" HELPERS_PATH="/opt/.phpstorm_helpers" INITIALIZED="false" VALID="true" RUN_AS_ROOT_VIA_SUDO="false" DOCKER_ACCOUNT_NAME="Docker" DOCKER_COMPOSE_SERVICE_NAME="cms" DOCKER_REMOTE_PROJECT_PATH="/opt/project">
+          <type_data command="EXEC" />
+          <dockerComposeConfigurationPaths>
+            <item value="$PROJECT_DIR$/docker-compose.yml" />
+            <item value="$PROJECT_DIR$/docker-compose.dev.yml" />
+          </dockerComposeConfigurationPaths>
+          <envs />
+        </remote_data>
+      </interpreter>
+    </interpreters>
+  </component>
+  <component name="PhpInterpretersPhpInfoCache">
+    <phpInfoCache>
+      <interpreter name="cms">
+        <phpinfo binary_type="PHP" php_cgi="/usr/local/bin/php-cgi" php_cli="/usr/local/bin/php" path_separator=":" version="8.0.0-dev">
+          <additional_php_ini>/usr/local/etc/php/conf.d/docker-php-enable-jit.ini, /usr/local/etc/php/conf.d/docker-php-enable-mb.ini, /usr/local/etc/php/conf.d/docker-php-ext-memcached.ini, /usr/local/etc/php/conf.d/docker-php-ext-mysqli.ini, /usr/local/etc/php/conf.d/docker-php-ext-redis.ini, /usr/local/etc/php/conf.d/docker-php-ext-sodium.ini, /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini, /usr/local/etc/php/conf.d/docker-php-ext-zip.ini</additional_php_ini>
+          <configuration_file />
+          <configuration_options>
+            <configuration_option name="include_path" value=".:/usr/local/lib/php" />
+          </configuration_options>
+          <debuggers>
+            <debugger_info debugger="xdebug" debugger_version="3.0.3">
+              <debug_extensions />
+            </debugger_info>
+          </debuggers>
+          <loaded_extensions>
+            <extension name="Core" />
+            <extension name="FFI" />
+            <extension name="PDO" />
+            <extension name="Phar" />
+            <extension name="Reflection" />
+            <extension name="SPL" />
+            <extension name="SimpleXML" />
+            <extension name="Zend OPcache" />
+            <extension name="ctype" />
+            <extension name="curl" />
+            <extension name="date" />
+            <extension name="dom" />
+            <extension name="fileinfo" />
+            <extension name="filter" />
+            <extension name="ftp" />
+            <extension name="gd" />
+            <extension name="hash" />
+            <extension name="iconv" />
+            <extension name="json" />
+            <extension name="libxml" />
+            <extension name="mbstring" />
+            <extension name="memcached" />
+            <extension name="mysqli" />
+            <extension name="mysqlnd" />
+            <extension name="openssl" />
+            <extension name="pcntl" />
+            <extension name="pcre" />
+            <extension name="pdo_sqlite" />
+            <extension name="posix" />
+            <extension name="readline" />
+            <extension name="redis" />
+            <extension name="session" />
+            <extension name="soap" />
+            <extension name="sockets" />
+            <extension name="sodium" />
+            <extension name="sqlite3" />
+            <extension name="standard" />
+            <extension name="tokenizer" />
+            <extension name="xdebug" />
+            <extension name="xml" />
+            <extension name="xmlreader" />
+            <extension name="xmlwriter" />
+            <extension name="zip" />
+            <extension name="zlib" />
+          </loaded_extensions>
+        </phpinfo>
+      </interpreter>
+    </phpInfoCache>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="8.0">
+    <option name="suggestChangeDefaultLanguageLevel" value="false" />
+  </component>
+  <component name="PhpUnit">
+    <phpunit_settings>
+      <phpunit_by_interpreter interpreter_id="c2a1f3d5-c46c-44c5-af52-89b90d136bab" configuration_file_path="/var/www/phpunit.xml" custom_loader_path="/var/www/vendor/autoload.php" phpunit_phar_path="" use_configuration_file="true" />
+    </phpunit_settings>
+  </component>
+  <component name="Psalm">
+    <Psalm_settings>
+      <PsalmConfiguration tool_path="$PROJECT_DIR$/cms/vendor/bin/psalm" />
+    </Psalm_settings>
+  </component>
+</project>
