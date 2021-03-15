@@ -147,12 +147,13 @@
       </interpreter>
     </phpInfoCache>
   </component>
-  <component name="PhpProjectSharedConfiguration" php_language_level="8.0">
+  <component name="PhpProjectSharedConfiguration" php_language_level="7.1">
     <option name="suggestChangeDefaultLanguageLevel" value="false" />
   </component>
   <component name="PhpUnit">
     <phpunit_settings>
       <phpunit_by_interpreter interpreter_id="c2a1f3d5-c46c-44c5-af52-89b90d136bab" configuration_file_path="/var/www/phpunit.xml" custom_loader_path="/var/www/vendor/autoload.php" phpunit_phar_path="" use_configuration_file="true" />
+      <PhpUnitSettings custom_loader_path="$PROJECT_DIR$/cms/vendor/autoload.php" />
     </phpunit_settings>
   </component>
   <component name="Psalm">
