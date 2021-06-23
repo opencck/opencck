@@ -1,29 +1,42 @@
-## Installation for development
+## Installation
 ```bash
-$ cd cms/
-$ composer install
-$ cp .env.example .env
-$ cp tests/.env.example tests/.env
+# cd cms/
+# cp .env.example .env
+# cp tests/.env.example tests/.env
+# composer install
 
-$ cd ../admin/
-$ npm install 
-$ cp .env.example .env
+# cd ../admin/
+# cp .env.example .env
+# npm install
 
-$ cd ../redis/
-$ cp .env.example .env
+# cd ../mysql/
+# cp .env.example .env
 
-$ cd ../
-$ docker-compose -f docker-compose.yml -f docker-compose.dev.yml build
-$ docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d
+$ ./install.sh
 ```
 
-## Installation for production
-### cms
+##Development
 ```bash
-$ cp cms/.env.example cms/.env
+docker-compose -f docker-compose.yml -f docker-compose.dev.yml build
+docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d
 ```
+
+## Production
+```bash
+docker-compose build
+docker-compose up -d
+```
+
+## Configuration
+### mysql
 ```env
-# cms/.env.example
+# mysql/.env
+REDIS_REPLICATION_MODE=master
+REDIS_PASSWORD=sOmE_sEcUrE_pAsS
+```
+### cms
+```env
+# cms/.env
 DB_HOST="localhost"
 DB_NAME=""
 DB_USER=""
@@ -39,26 +52,17 @@ SYS_LOCATIONS="api;admin"
 ```
 
 ### admin
-```bash
-$ cp admin/.env.example admin/.env
-```
 ```env
-# admin/.env.example
+# admin/.env
 HOST=0.0.0.0
 PORT=4000
+PROXY_API_URL=http://0.0.0.0:5000/
+#PROXY_API_URL=http://192.168.99.100:5000/
 ```
 
 ### redis
-```bash
-$ cp redis/.env.example redis/.env
-```
 ```env
-# redis/.env.example
+# redis/.env
 REDIS_REPLICATION_MODE=master
 REDIS_PASSWORD=sOmE_sEcUrE_pAsS
-```
-### docker
-```bash
-$ docker-compose build
-$ docker-compose up -d
 ```
