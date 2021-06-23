@@ -31,16 +31,27 @@ docker-compose up -d
 ### mysql
 ```env
 # mysql/.env
-REDIS_REPLICATION_MODE=master
-REDIS_PASSWORD=sOmE_sEcUrE_pAsS
+MARIADB_DATABASE=cck
+MARIADB_USER=cck
+MARIADB_PASSWORD=password
+MARIADB_SKIP_TEST_DB=yes
 ```
 ### cms
 ```env
 # cms/.env
-DB_HOST="localhost"
-DB_NAME=""
-DB_USER=""
-DB_PASS=""
+DB_HOST="mysql"
+DB_NAME="cck"
+DB_USER="cck"
+DB_PASS="password"
+REDIS_HOST="redis"
+REDIS_PASSWORD=""
+REDIS_PORT="6379"
+REDIS_DB="0"
+MEMCACHED_HOST="memcached"
+MEMCACHED_PORT="11211"
+MEMCACHED_WEIGHT="100"
+# "" - auto; "redis", "memcached" or "db"
+SESSIONS_HANDLER=""
 SYS_SECRET=""
 SYS_COOKIE_LIFETIME="86400"
 SYS_COOKIE_PATH="/"
