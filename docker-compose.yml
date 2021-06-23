@@ -1,25 +1,25 @@
-version: '3.7'
+version: "3.7"
 services:
   cms:
     restart: always
     build:
       context: ./cms/
       dockerfile: Dockerfile.production
-#    networks:
-#      - backend
+    #    networks:
+    #      - backend
     env_file:
       - ./cms/.env
     depends_on:
       - memcached
       - redis
-    command: 'php-fpm'
+    command: "php-fpm"
   admin:
     restart: always
     build:
       context: ./admin/
       dockerfile: Dockerfile.production
-#    networks:
-#      - frontend
+    #    networks:
+    #      - frontend
     ports:
       - 4000:4000
     env_file:
@@ -27,31 +27,42 @@ services:
     depends_on:
       - cms
       - nginx
-    command: 'npm run start'
+    command: "npm run start"
   nginx:
-    image: 'nginx:1.19'
+    image: "nginx:1.19"
     restart: always
-#    networks:
-#      - backend
-#      - frontend
+    #    networks:
+    #      - backend
+    #      - frontend
     ports:
       - 80:80
       - 443:443
     volumes:
       - ./cms:/var/www
-      - ./nginx:/etc/nginx/conf.d
-  memcached:
-    image: 'docker.io/bitnami/memcached:1-debian-10'
+      - ./nginx/conf.d:/etc/nginx/conf.d
+  mysql:
+    build:
+      context: ./mysql/
+      dockerfile: Dockerfile
     restart: always
-#    networks:
-#      - backend
+    ports:
+      - 3306:3306
+    volumes:
+      - db:/bitnami/mariadb/data
+    env_file:
+      - ./mysql/.env
+  memcached:
+    image: "docker.io/bitnami/memcached:1-debian-10"
+    restart: always
+    #    networks:
+    #      - backend
     ports:
       - 11211:11211
   redis:
-    image: 'redis:alpine'
+    image: "redis:alpine"
     restart: always
-#    networks:
-#      - backend
+    #    networks:
+    #      - backend
     ports:
       - 6379:6379
     volumes:
@@ -59,7 +70,10 @@ services:
       - ./redis/redis.conf:/usr/local/etc/redis/redis.conf
     env_file:
       - ./redis/.env
-    command: 'redis-server'
+    command: "redis-server"
+volumes:
+  db:
+    driver: local
 #networks:
 #  backend:
 #    driver: bridge

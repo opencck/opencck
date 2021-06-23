@@ -1,4 +1,4 @@
-version: '3.7'
+version: "3.7"
 services:
   cms:
     build:
@@ -6,19 +6,23 @@ services:
       dockerfile: Dockerfile
     ports:
       - 5000:5000
-#    networks:
-#      - default
+    #    networks:
+    #      - default
     volumes:
       - ./cms:/var/www
-    command: 'php -S 0.0.0.0:5000 -t /var/www/public'
+    command: "php -S 0.0.0.0:5000 -t /var/www/public"
   admin:
     build:
       context: ./admin/
       dockerfile: Dockerfile
-#    networks:
-#      - default
+    #    networks:
+    #      - default
     volumes:
       - ./admin:/var/www
-    command: 'npm run dev'
+    command: "npm run dev"
   nginx:
-    restart: 'no'
+    restart: "no"
+  mysql:
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+      - MARIADB_ROOT_PASSWORD=
