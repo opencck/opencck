@@ -4,3 +4,9 @@
 [submodule "admin"]
 	path = admin
 	url = git@github.com:opencck/cms-admin.git
+[submodule "site"]
+	path = admin
+	url = git@github.com:opencck/cms-site.git
+[submodule "docs"]
+	path = docs
+	url = https://github.com/opencck/opencck.github.io
