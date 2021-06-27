@@ -6,16 +6,16 @@
 *.c text
 *.h text
 
-# Declare files that will always have CRLF line endings on checkout.
-*.sln text eol=crlf
-*.php text eol=crlf
-*.js text eol=crlf
-*.json text eol=crlf
-*.vue text eol=crlf
-*.css text eol=crlf
-*.scss text eol=crlf
-*.sass text eol=crlf
-*.less text eol=crlf
+# Declare files that will always have LF line endings on checkout.
+*.sln text eol=lf
+*.php text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.vue text eol=lf
+*.css text eol=lf
+*.scss text eol=lf
+*.sass text eol=lf
+*.less text eol=lf
 
 # Denote all files that are truly binary and should not be modified.
 *.png binary
