@@ -9,4 +9,4 @@
 	url = git@github.com:opencck/cms-site.git
 [submodule "docs"]
 	path = docs
-	url = https://github.com/opencck/opencck.github.io
+	url = git@github.com:opencck/opencck.github.io.git

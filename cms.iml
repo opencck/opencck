@@ -57,7 +57,6 @@
       <excludeFolder url="file://$MODULE_DIR$/cms/vendor/openlss/lib-array2xml" />
       <excludeFolder url="file://$MODULE_DIR$/cms/vendor/doctrine/collections" />
       <excludeFolder url="file://$MODULE_DIR$/cms/vendor/vlucas/phpdotenv" />
-      <excludeFolder url="file://$MODULE_DIR$/cms/vendor/opencck/api" />
       <excludeFolder url="file://$MODULE_DIR$/cms/vendor/phpunit/php-code-coverage" />
       <excludeFolder url="file://$MODULE_DIR$/cms/vendor/phpunit/php-file-iterator" />
       <excludeFolder url="file://$MODULE_DIR$/cms/vendor/phpunit/php-invoker" />
