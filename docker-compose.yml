@@ -10,6 +10,7 @@ services:
     env_file:
       - ./cms/.env
     depends_on:
+      - mysql
       - memcached
       - redis
     command: "php-fpm"
@@ -49,6 +50,8 @@ services:
       - 3306:3306
     volumes:
       - db:/bitnami/mariadb/data
+    networks:
+      - default
     env_file:
       - ./mysql/.env
   memcached:

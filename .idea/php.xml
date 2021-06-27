@@ -64,6 +64,8 @@
       <path value="$PROJECT_DIR$/cms/vendor/nikic/php-parser" />
       <path value="$PROJECT_DIR$/cms/vendor/composer" />
       <path value="$PROJECT_DIR$/cms/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/cms/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/cms/vendor/doctrine/deprecations" />
     </include_path>
   </component>
   <component name="PhpInterpreters">

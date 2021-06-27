@@ -69,6 +69,8 @@
       <excludeFolder url="file://$MODULE_DIR$/cms/vendor/nikic/php-parser" />
       <excludeFolder url="file://$MODULE_DIR$/cms/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/cms/vendor/phpunit/phpunit" />
+      <excludeFolder url="file://$MODULE_DIR$/cms/vendor/symfony/deprecation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/cms/vendor/doctrine/deprecations" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
